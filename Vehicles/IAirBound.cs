@@ -5,5 +5,6 @@ namespace vehicles.Vehicles
         bool Winged { get; set;}
         double MaxSpeed { get; set;}
         void Fly();
+        void Land();
     }
 }

@@ -17,17 +17,17 @@ namespace vehicles.Vehicles
 
         public void Fly()
         {
-            Console.WriteLine("The Cessna effortlessly glides through the clouds like a gleaming god of the Sun");
+            Console.WriteLine("The Cessna effortlessly glides through the clouds like a gleaming god of the Sun.");
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Clear!");
         }
 
-        public void Stop()
+        public void Land()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Bump...Bump...Bump...Bump..Bump.Skid");
         }
     }
 }

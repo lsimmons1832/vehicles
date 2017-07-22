@@ -20,12 +20,12 @@ namespace vehicles.Vehicles
 
        public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("VROOM!!!!!VROOM!!!");
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Gee officer, I didn't know how fast I was going.");
         }
     }
 }

@@ -6,12 +6,12 @@ namespace vehicles.Vehicles
 {
     public class JetSki : IFloat, IDrivableVehicle
     {
-        public int Wheels { get; set;}
-        public int Doors { get; set;}        
-        public int PassengerCapacity { get; set;}
-        public string TransmissionType { get ; set;}
-        public double EngineVolume { get ; set;}
-        public double MaxSpeed { get; set;}
+        public int Wheels { get; set;} = 0;
+        public int Doors { get; set;} = 0;        
+        public int PassengerCapacity { get; set;} = 1;
+        public string TransmissionType { get ; set;} = "Variable";
+        public double EngineVolume { get ; set;} = 1.1;
+        public double MaxSpeed { get; set;} = 42;
 
         public void Drive()
         {
@@ -20,12 +20,12 @@ namespace vehicles.Vehicles
 
         public void Start()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Hey y'all watch this!!");
         }
 
         public void Stop()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Call 911!!!!!");
         }
     }
 }

@@ -13,13 +13,6 @@ namespace vehicles.Vehicles
         string TransmissionType { get; set; }
         double EngineVolume { get; set; }
         void Start();
-        void Stop();
 
-
-    }
-
-    public interface IDrivableVehicle
-    {
-                void Drive();
     }
 }
