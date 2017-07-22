@@ -1,12 +1,8 @@
 namespace vehicles.Vehicles
 {
-    public interface IRoadWarrior
+    public interface IRoadWarrior : IVehicle
     {
-        int Wheels {get;}
-        int Doors {get;}
-        int PassengerCapacity {get;}
-        string TransmissionType { get;}
-        double EngineVolume { get;}
-        double MaxLandSpeed { get;}
+        double MaxSpeed { get; set;}
+
     }
 }

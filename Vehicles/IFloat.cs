@@ -1,8 +1,7 @@
 namespace vehicles.Vehicles
 {
-    public interface IFloat
+    public interface IFloat : IVehicle
     {
-        double EngineVolume { get;}
-        double MaxWaterSpeed {get;}
+        double MaxSpeed { get; set;}
     }
 }

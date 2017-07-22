@@ -1,10 +1,9 @@
 namespace vehicles.Vehicles
 {
-    public interface IAirBound
+    public interface IAirBound : IVehicle
     {
-        int PassengerCapacity { get;}
-        bool Winged { get;}
-        double EngineVolume { get;}
-        double MaxAirSpeed { get;}
+        bool Winged { get; set;}
+        double MaxSpeed { get; set;}
+        void Fly();
     }
 }

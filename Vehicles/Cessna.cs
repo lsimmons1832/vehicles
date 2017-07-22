@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace vehicles.Vehicles
 {
-    public class Cessna : Vehicle, IVehicle, IAirBound
+    public class Cessna :  IAirBound
     {
         public int Wheels { get; set; } = 3;
         public int Doors { get; set; } = 3;
@@ -12,14 +12,8 @@ namespace vehicles.Vehicles
         public bool Winged { get; set; } = true;
         public string TransmissionType { get; set; } = "None";
         public double EngineVolume { get; set; } = 31.1;
-        public double MaxWaterSpeed { get; set; }
-        public double MaxLandSpeed { get; set; }
-        public double MaxAirSpeed { get; set; } = 309.0;
 
-        public void Drive()
-        {
-            throw new NotImplementedException();
-        }
+        public double MaxSpeed { get; set; } = 309.0;
 
         public void Fly()
         {
